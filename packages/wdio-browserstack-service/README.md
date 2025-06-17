@@ -1,7 +1,7 @@
 WebdriverIO BrowserStack Service
 ==========
 
-> A WebdriverIO service for BrowserStack users, enabling testing on 3,000+ real browsers and devices with support for local testing and test analytics.
+> A WebdriverIO service that manages local tunnel and job metadata for BrowserStack users.
 
 ## Prerequisites
 
@@ -67,23 +67,18 @@ export const config = {
 Configure your `wdio.conf.js` with these key options:
 
 ### Web Testing
-
-* Test web apps on 3,000+ real desktop/mobile browsers using Selenium.
-* Set browser capabilities via BrowserStack’s [Capability Generator](https://www.browserstack.com/automate/capabilities).
 * [Integrate with Automate](https://www.browserstack.com/docs/automate/selenium/getting-started/nodejs/webdriverio/integrate-your-tests).
+* Set browser capabilities via BrowserStack’s [Capability Generator](https://www.browserstack.com/automate/capabilities).
 * Manage sessions and retrieve test data (e.g., logs, screenshots) with the [Automate REST API](https://www.browserstack.com/docs/automate/api-reference/selenium/automate-api).
 
 ### App Testing
-
-* Test native/hybrid apps on 2,000+ real iOS/Android devices using Appium.
-* Configure device settings via BrowserStack’s [App Automate Capability Generator](https://www.browserstack.com/app-automate/capabilities).
 * [Integrate with App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/nodejs/webdriverio/integrate-your-tests).
+* Configure device settings via BrowserStack’s [App Automate Capability Generator](https://www.browserstack.com/app-automate/capabilities).
 * Manage sessions and retrieve test data (e.g., logs, screenshots, videos) with the [App Automate REST API](https://www.browserstack.com/docs/app-automate/api-reference).
 
 ### Test Reporting & Analytics
-
 * Gain insights like unique error analysis and automatic flaky test detection.
-* Enabled by default with `testObservability: true`. 
+* Enabled by default with `testObservability: true` in your configuration file. 
 * View results: [Test Reporting & Analytics dashboard](https://observability.browserstack.com/overview).
 * Learn more: [Test Reporting & Analytics guide](https://www.browserstack.com/docs/test-reporting-and-analytics/quick-start/webdriverio).
 
